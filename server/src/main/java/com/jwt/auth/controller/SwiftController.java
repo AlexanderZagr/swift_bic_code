@@ -32,8 +32,7 @@ public class SwiftController {
     }
 
     @GetMapping("/swiftBic")
-    public ApiResponse<List<SwiftFi>> listSwiftBic(//пример с кодом для тестирования
-                                                  //  @RequestParam(required = false, defaultValue = "ZBCGMEPGXXX") String bic){
+    public ApiResponse<List<SwiftFi>> listSwiftBic(
          @RequestParam String bic){
         return new ApiResponse<>(HttpStatus.OK.value(), "Swift fetched successfully.",
                 swiftBicService.getSwiftBic(bic));

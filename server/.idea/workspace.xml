@@ -6,12 +6,29 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acc70a5b-2ea3-462c-916d-30b261a3e52d" name="Default Changelist" comment="" />
+    <list default="true" id="acc70a5b-2ea3-462c-916d-30b261a3e52d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwt/auth/config/IbankDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwt/auth/config/IbankDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwt/auth/config/TmpIdocDataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwt/auth/config/TmpIdocDataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwt/auth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwt/auth/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwt/auth/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwt/auth/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwt/auth/controller/SendDataToSpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwt/auth/controller/SendDataToSpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwt/auth/controller/SwiftController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwt/auth/controller/SwiftController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jwt/auth/AuthApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jwt/auth/app/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jwt/auth/app/ApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jwt/auth/controllers/RoleControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jwt/auth/controllers/RoleControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jwt/auth/services/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jwt/auth/services/UserServiceTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -21,11 +38,13 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1uGQLethFXt7MjNAfyW1lJU8JLM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -152,10 +171,22 @@
       <workItem from="1624872860495" duration="6185000" />
       <workItem from="1624963895262" duration="1958000" />
       <workItem from="1624973238647" duration="42000" />
+      <workItem from="1624990593622" duration="283000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

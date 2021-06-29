@@ -25,20 +25,14 @@ public class SendDataToSpController {
 
     final Logger logger = LoggerFactory.getLogger(SendDataToSpController.class);
 
-    //Метод для тестирования отправки запроса на СП
-    //Для тестирования есть два файла - AS_reqdata.xml и AS_reqinfo.xml
-    //отправляем эти хмл в виде пост запроса на СП
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @RequestMapping(value = "/sendData", method = RequestMethod.GET,produces = { MediaType.APPLICATION_XML_VALUE  })
     public String sendDataGet() throws AuthenticationException {
         logger.debug("*************************");
-        //получили хмл из файлов для тестирования
         String reqinfo=spMethodService.fileTestDataXml(sFileInfo);
         String reqdata=spMethodService.fileTestDataXml(sFileData);
         String postDataXml="AS_reqinfo="+reqinfo+"&AS_reqdata="+reqdata;
-        //отправляем тестовый запрос на СП
         String response=spMethodService.InitSpConnect(postDataXml);
-        //получаем ответ от СП в формате XML
         return response;
     }
 
@@ -47,10 +41,9 @@ public class SendDataToSpController {
     @RequestMapping(value = "/sendData", method = RequestMethod.POST,produces = { MediaType.APPLICATION_XML_VALUE })
     public String sendDataPost(@RequestBody String postDataXml) throws AuthenticationException {
         logger.debug("*************************");
-        logger.debug("Отправляем запрос на СП "+postDataXml);
-        //отправляем запрос на СП post "AS_reqinfo="+reqinfo+"&AS_reqdata="+reqdata"
+        logger.debug("Submitting a support request "+postDataXml);
         String response=spMethodService.InitSpConnect(postDataXml);
-        logger.debug("Получаем ответ от СП "+response);
+        logger.debug("Receive a response from the support "+response);
         return response;
     }
 }

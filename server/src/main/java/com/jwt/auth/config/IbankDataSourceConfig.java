@@ -45,13 +45,6 @@ public class IbankDataSourceConfig {
     public DataSource ibankDataSource() {
         DataSourceProperties ibankDataSourceProperties = ibankDataSourceProperties();
 
-        //System.out.println("!!!"+ibankDataSourceProperties.getDriverClassName());
-        //System.out.println("!!!"+ibankDataSourceProperties.getUrl());
-        //System.out.println("!!!"+ibankDataSourceProperties.getUsername());
-       // System.out.println("!!!"+ibankDataSourceProperties.getPassword());
-        //System.out.println("!!!"+ibankDataSourceProperties.getPassword());
-
-
         return DataSourceBuilder.create()
                 .driverClassName(ibankDataSourceProperties.getDriverClassName())
                 .url(ibankDataSourceProperties.getUrl())
@@ -63,9 +56,6 @@ public class IbankDataSourceConfig {
     @Bean
     public PlatformTransactionManager ibankTransactionManager()
     {
-
-       // EntityManagerFactory factory = ibankEntityManagerFactory().getObject();
-        //return new JpaTransactionManager(factory);
 
         EntityManagerFactory factory = ibankEntityManagerFactory().getObject();
         JpaTransactionManager transactionManager = new JpaTransactionManager();
@@ -94,7 +84,6 @@ public class IbankDataSourceConfig {
         DataSourceInitializer dataSourceInitializer = new DataSourceInitializer();
         dataSourceInitializer.setDataSource(ibankDataSource());
         ResourceDatabasePopulator databasePopulator = new ResourceDatabasePopulator();
-        // databasePopulator.addScript(new ClassPathResource("orders-data.sql"));
         dataSourceInitializer.setDatabasePopulator(databasePopulator);
         dataSourceInitializer.setEnabled(env.getProperty("datasource.ibank.initialize", Boolean.class, false));
         return dataSourceInitializer;

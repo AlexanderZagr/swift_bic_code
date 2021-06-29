@@ -78,7 +78,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.cors().and().csrf().disable().authorizeRequests()
                 .antMatchers(HttpMethod.OPTIONS, "/localhost:3000").permitAll()
                 .antMatchers("/token/**").permitAll()
-               // .antMatchers("/sp/**").permitAll()
                 .antMatchers("/branches/**").permitAll()
                 .antMatchers("/tmpIdocCombineWorker/**").permitAll()
                 .antMatchers("/departments/**").permitAll()

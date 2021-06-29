@@ -46,10 +46,6 @@ public class TmpIdocDataSourceConfig {
     public DataSource tmpIdocDataSource() {
         DataSourceProperties tmpIdocDataSourceProperties = tmpIdocDataSourceProperties();
 
-      //  System.out.println("!!!"+tmpIdocDataSourceProperties.getDriverClassName());
-      //  System.out.println("!!!"+tmpIdocDataSourceProperties.getUrl());
-      //  System.out.println("!!!"+tmpIdocDataSourceProperties.getUsername());
-      //  System.out.println("!!!"+tmpIdocDataSourceProperties.getPassword());
 
         DataSource ds=DataSourceBuilder.create()
                 .driverClassName(tmpIdocDataSourceProperties.getDriverClassName())
@@ -57,7 +53,6 @@ public class TmpIdocDataSourceConfig {
                 .username(tmpIdocDataSourceProperties.getUsername())
                 .password(tmpIdocDataSourceProperties.getPassword())
                 .build();
-        //Ограничили кол_во сессий
         ((com.zaxxer.hikari.HikariDataSource) ds).setMaximumPoolSize(1);
         return ds;
     }
