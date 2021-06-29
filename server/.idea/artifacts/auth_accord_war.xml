@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="auth-accord:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>auth-accord</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="auth-accord-idoc.war">
+      <element id="artifact" artifact-name="auth-accord:war exploded" />
+    </root>
+  </artifact>
+</component>
