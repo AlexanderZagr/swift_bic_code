@@ -35,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Docker-Repeat/spring-security-react-ant-design-polls-app-master/polling-app-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Auth_accord/server" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -159,7 +159,7 @@
       <workItem from="1624872860495" duration="6185000" />
       <workItem from="1624963895262" duration="1958000" />
       <workItem from="1624973238647" duration="42000" />
-      <workItem from="1624990593622" duration="2054000" />
+      <workItem from="1624990593622" duration="2496000" />
     </task>
     <servers />
   </component>
